@@ -6,6 +6,10 @@ body {
   padding: 50px;
 }
 
+.title {
+  margin-bottom: 20px;
+}
+
 h1 {
   color: #d32f2f;
 }
