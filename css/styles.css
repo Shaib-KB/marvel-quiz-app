@@ -4,6 +4,8 @@ body {
   color: #333;
   text-align: center;
   padding: 50px;
+  padding-bottom: 80px; /* Adjust to ensure space for the footer */
+  margin: 0;
 }
 
 .title {
@@ -26,6 +28,27 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Move to the top-right corner */
+  background-color: transparent;
+  color: black; /* Default color for unselected */
+  border: 2px solid transparent; /* Default border color */
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bookmark.selected {
+  color: black; /* Color when selected */
+  border-color: red; /* Red border when selected */
+  background-color: white; /* Ensure background is white for contrast */
 }
 
 .question-card h2 {
@@ -48,4 +71,70 @@ button {
 
 button:hover {
   background-color: #a02828;
+}
+
+.tags {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #eee;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navbar a i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.navbar a:hover {
+  color: #d32f2f;
+}
+
+.navbar .active {
+  color: #d32f2f; /* Highlight color for active link */
+}
+
+.content-section {
+  display: none;
+}
+
+#home {
+  display: block;
 }
