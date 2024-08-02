@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,5 +11,19 @@
     <div class="title">
       <h1>Marvel Quiz App</h1>
     </div>
+    <div class="question-card">
+      <h2>Question 1</h2>
+      <p>
+        What is the name of the first Marvel Cinematic Universe film, released
+        in 2008?
+      </p>
+      <button onclick="showAnswer()">Show Answer</button>
+      <p id="answer" class="hidden">Iron Man</p>
+    </div>
+    <script>
+      function showAnswer() {
+        document.getElementById("answer").classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
