@@ -6,7 +6,7 @@ body {
   padding: 0px;
   padding-bottom: 80px; /* Adjust to ensure space for the footer */
   margin: 0;
-  border: 5px solid red; /* adjust border width and color*/
+; /* adjust border width and color*/
 }
 
 .title {
@@ -139,11 +139,43 @@ footer {
   display: none;
 }
 
-#home {
+ #home {
   display: block;
-}
- .profile-image {width: 150px;
-height: 150px;
-border-radius: 50%;
-object-fit: cover;}
+} 
 
+/* .profile-page {position: relative;} 
+
+.profile-image {position:absolute;
+top:0;
+left:0;
+width : 100px;
+height: 100px;
+border-radius: 50%;
+overflow: hidden;}
+
+.profile-image image {
+width: 100%;
+height:100%;
+height:100%;
+object-fit:cover;
+} */
+.about-me {display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50vh;
+margin-left: 20px;}
+
+.flexbox {background-color: #fff;
+border: 1px solid black;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+margin: 10px 0;
+max-width: 400px;
+max-height: 200px;
+text-align: left;
+display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+bottom: 400px;}
