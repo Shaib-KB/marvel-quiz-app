@@ -1,15 +1,18 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: wheat;
   color: #333;
   text-align: center;
-  padding: 50px;
+  padding: 0px;
   padding-bottom: 80px; /* Adjust to ensure space for the footer */
   margin: 0;
+  border: 5px solid red; /* adjust border width and color*/
 }
 
 .title {
   margin-bottom: 20px;
+  background-color: #333;
+  padding: 10px; adjust /* paddind as needed */
 }
 
 h1 {
@@ -82,7 +85,7 @@ button:hover {
 .tag {
   background-color: #eee;
   color: #333;
-  padding: 5px 10px;
+  padding: 3px 10px;
   border-radius: 3px;
 }
 
@@ -90,11 +93,12 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
-  border-top: 1px solid #ccc;
+  background-color: wheat;
+  border-top: 5px solid red;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
 }
+
 
 .navbar {
   list-style: none;
@@ -138,3 +142,8 @@ footer {
 #home {
   display: block;
 }
+ .profile-image {width: 150px;
+height: 150px;
+border-radius: 50%;
+object-fit: cover;}
+
